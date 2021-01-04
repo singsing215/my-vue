@@ -1,11 +1,9 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-
+import Foo from '../components/Foo.vue'
+import Bar from '../components/Bar.vue'
 
 Vue.use(VueRouter)
-
-const Foo = { template: '<div>foo</div>' }
-const Bar = { template: '<div>bar</div>' }
 
 const routes = [
   { path: '/foo', component: Foo },
@@ -14,6 +12,7 @@ const routes = [
 
 const router = new VueRouter(
   {
+    mode: 'history',
     routes: routes
   }
 );
