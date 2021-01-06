@@ -1,5 +1,15 @@
 # my-project
 
+## Install Vue
+```
+yarn global add @vue/cli
+```
+
+## Create Project
+```
+vue create my-project
+```
+
 ## Project setup
 ```
 yarn install
